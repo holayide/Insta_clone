@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800;900&display=swap');
+
+:root {
+    --insta-black: #262626;
+    --dark-grey: rgb(219, 219, 219);
+    --transparent-grey: #8e8e8e;
+    --insta-blue: #0095f6;
+    --deep-grey: #c7c7c7;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    width: 15.5%;
+    position: fixed;
+    border-right: 1px solid var(--dark-grey);
+}
+.sidebar_wrapper {
+    margin: 40px 0 0 25px;
+}
+.logo img {
+    margin-bottom: 40px;
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.sidebar a {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 40px;
+    /* padding: 8px 10px 8px 8px; */
+    color: var(--insta-black);
+}
+.sidebar a:hover {
+    background-color: var(--transparent-grey);
+    border-radius: 30px;
+}
+.sidebar a img {
+    width: 23px;
+}
+.sidebar a span {
+    padding-left: 16px;
+    font-size: .9rem;
+}
+.sidebar a:first-child {
+    font-weight: 501;
+    color: var(--insta-black);
+}
+.sidebar a:last-child {
+    margin-top: 80px;
+}
+
+/* ---------------------- main ------------------------ */
+main{
+    width: 84.5%;
+    /* height: 100vh; */
+    margin-left: 15.5%;
+    background-color: #F5F6F7;
+    display: flex;
+    padding-left: 16.5%;
+}
+
+/* ---------------------- middle ------------------------ */
+.main_feed {
+    width: 43%;
+    margin: 0 35px 50px 0 ;
+    position: relative;
+}
+.new_post {
+    width: 6%;
+    background-color: white;
+    text-align: center;
+    padding: 7px 2px;
+    border-radius: 20px;
+    font-size: 1rem;
+    position: fixed;
+    right: 50%;
+    top: 8px;
+    left: 50%;
+    z-index: 1;
+    box-shadow: 0 10px 45px rgb(0 0 0 / 20%);
+}
+.new_post p {
+    font-size: .97rem;
+    font-weight: 500;
+    color: var(--insta-black);
+}
+.profile {
+    display: flex;
+    border: 1px solid var(--dark-grey);
+    background-color: white;
+    border-radius: 12px;
+    margin-top: 25px;
+}
+.userCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 10px 0 15px 10px;
+}
+
+.imgWrapper {
+    padding: 5px;
+    background-image: url('../images/download.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.imgWrapper img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.userDetails .username {
+    font-size: .8rem;
+}
+
+/* boxes */
+.box {
+    border: 1px solid var(--dark-grey);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0 0px 0;  /* check-------------------------- */
+}
+
+/* ---------------------- boxes ------------------------ */
+.boxes {
+    display: flex;
+    flex-direction: column;
+}
+.box_head {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.user__profile {
+    display: flex;
+    align-items: center;
+}
+.profile_img img {
+    width: 40px;
+    height: 40px;
+}
+.user_details_profile {
+    padding-left: 10px;
+}
+.user_details_profile .username_profile {
+    font-size: .9rem;
+    font-weight: bold;
+    color: var(--insta-black);
+    opacity: .8;
+}
+.user_details_profile .userHandle {
+    font-size: .8rem;
+}
+.box_img img {
+    width: 100%;
+    height: 90vh;
+    margin-top: 0;
+    object-fit: cover;
+}
+.box__form,
+.box_bottom {
+    background-color: white;
+}
+.box_bottom {
+    padding: 10px;
+}
+.box_icon {
+    display: flex;
+    justify-content: space-between;
+}
+.box_icon .icon_left img:nth-last-of-type(2) {
+    margin: 0 15px;
+}
+.likes {
+    font-size: .9rem;
+    padding: 10px 0;
+}
+.note {
+    font-size: .8rem;
+}
+.note span {
+    color: var(--transparent-grey);
+    font-size: .8rem;
+}
+a {
+    text-decoration: none;
+}
+.comment a {
+    font-size: .85rem;
+    color: var(--transparent-grey);
+}
+.time a{
+    font-size: .7rem;
+    color: var(--transparent-grey);
+    padding-bottom: 10px;
+}
+.box__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--dark-grey);
+    padding: 3px 10px;
+}
+.box__form-left {
+    display: flex;
+    /* align-items: center; */
+}
+.box__form .emoji img{
+    width: 25px;
+    margin-right: 10px;
+}
+form input {
+    border: 0;
+    width: 350px;
+}
+.post {
+    font-size: .8rem;
+    color: var(--insta-blue);
+    font-weight: bold;
+    opacity: .5;
+}
+
+/* ---------------------- middle ------------------------ */
+.third__side-insta {
+    width: 30%;
+    margin-top: 80px;
+}
+.my__profile,
+.suggestions__note{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.account {
+    display: flex;
+    align-items: center;
+}
+.account img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.acct__details {
+    margin-left: 10px;
+}
+.acct__details .acct__name {
+    font-size: .9rem;
+    color: var(--insta-black);
+    line-height: .9rem;
+}
+.acct__details .acct__handle,
+.suggestions__note p  {
+    font-size: .9rem;
+    color: var(--transparent-grey);
+}
+.switch {
+    font-size: .7rem;
+    color: var(--insta-blue);
+    font-weight: bold;
+}
+.suggestions {
+    margin: 15px 0 20px;
+}
+.suggestions__note {
+    margin-bottom: 15px;
+}
+.see_all p{
+    font-size: .75rem;
+    color: var(--insta-black);
+}
+.other__account {
+    display: flex;
+}
+.other__account img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+.acct__details .suggested__name {
+    font-size: .9rem;
+}
+.acct__details .suggested__note {
+    font-size: .7rem;
+}
+
+    /* ---------------------- middle ------------------------ */
+footer {
+    display: flex;
+}
+.footer_link {
+    margin-bottom: 20px;
+}
+.footer_link ul li {
+    list-style: inside;
+    display: inline-block;
+}
+ul li a {
+    font-size: .7rem;
+    color: var(--deep-grey);
+}
+.copyright {
+    font-size: .8rem;
+    color: var(--deep-grey);
+}
